@@ -5,17 +5,19 @@
 
 from functools import reduce
 
-class Solution: 
+class Solution:
     def productExceptSelf(self, nums): 
+
+
+
+    # Slow solution. Timed out. 
+    def productExceptSelfV2(self, nums): 
         # Used to store the ith element, which would be the one we are not using in the multiplication
         excluded_element = [] 
-        # The final array that everything will be added to
         answer = [] 
         for i in range(len(nums)):
             excluded_element = nums.pop(i) 
-
             excluded_multiplication = reduce(lambda x, y: x * y, nums, 1)
-
             answer.append(excluded_multiplication) 
             nums.insert(i, excluded_element) 
         return answer

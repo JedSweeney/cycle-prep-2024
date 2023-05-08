@@ -9,22 +9,13 @@ class Solution:
         # Key: Count dictionary represnting the occurences of characters in a word 
         # Value: a list of words that are anagrams of eachother. 
         words = defaultdict(list)
-
         for s in strs: 
             count = [0] * 26 
-
             for c in s: 
-                count[ord(c) - ord("a")] += 1 
-                
+                count[ord(c) - ord("a")] += 1  
             words[tuple(count)].append(s) 
-
-        return words.values()            
-
+        return words.values()          
 
 
-
-solution = Solution() 
-
-assert solution.groupAnagrams(["abc", "cab", "bbb"]) == [["abc", "cab"], ["bbb"]] 
 
 

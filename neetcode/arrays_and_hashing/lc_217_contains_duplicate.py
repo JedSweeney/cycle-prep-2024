@@ -1,9 +1,6 @@
 # Contains Duplicate 
 # Given and integer array nums, return true if any value appears at least twice in the array, and return false i fevery element is distinct 
 
-# Alternate idea, use a set, add the values to a set and if the set is the same length as it was before we added the element to the set because sets are exclusive
-
-
 from typing import List
 
 class Solution:
