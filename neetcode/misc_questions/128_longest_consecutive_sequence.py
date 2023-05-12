@@ -27,16 +27,6 @@ class Solution:
                 result.append(group)
         return result
 
-    
-
-        
-            
-                
-
-
-
-
-
 solution = Solution() 
 
 assert solution.longestConsecutive([100, 4, 200, 1, 3, 2]) == 4 

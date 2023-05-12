@@ -6,7 +6,8 @@
 from functools import reduce
 
 class Solution:
-    def productExceptSelf(self, nums): 
+    def productExceptSelf(self, nums):
+        # Prefix and suffix 
 
 
 

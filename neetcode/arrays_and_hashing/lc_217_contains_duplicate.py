@@ -16,21 +16,18 @@ class Solution:
         # This list has no duplicates 
         return False
     
-    def containsDuplicateV2(self, nums):  
+    def containsDuplicateV2(self, nums): 
         # Create a set to keep track of seen values. 
         seen_values = set(nums)
         # Compare the seen_values length to the length of the orignal List
-        return len(seen_values) < len(nums)
+        return len(seen_values) < len(nums) 
         
-
-
 solution = Solution() 
 assert solution.containsDuplicate([1, 2, 3, 4]) is False  
 assert solution.containsDuplicate([1, 2, 2, 3, 4]) is True
 
 assert solution.containsDuplicateV2([1, 2, 3, 4]) is False  
 assert solution.containsDuplicateV2([1, 2, 2, 3, 4]) is True
-
 
 print("All Tests Passed!")
 
